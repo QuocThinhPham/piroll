@@ -1,0 +1,25 @@
+.section-block {
+    max-width: 690px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: $font-size-30;
+    font-weight: $font-weight-semi;
+    text-transform: capitalize;
+}
+
+.section-desc {
+    font-family: $font-secondary;
+    font-size: $font-size-16;
+    color: $black-lighter;
+    line-height: 24px;
+}
+
+.paragraph {
+    font-size: $font-size-24;
+    text-align: center;
+    line-height: 36px;
+    color: $white-primary;
+}

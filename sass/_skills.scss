@@ -1,0 +1,33 @@
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    &-content {
+        background-color: $white-secondary;
+    }
+
+    &-image {
+        background: url(../images/about-bg.jpg) top left / cover no-repeat;
+    }
+
+    &-name,
+    &-percent {
+        font-size: $font-size-12;
+        font-weight: $font-weight-semi;
+        text-transform: uppercase;
+    }
+
+    &-rectangle {
+        background-color: $white-darker;
+        width: 500px;
+        height: 3px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: var(--percent);
+            height: 100%;
+            background-color: $cyan-primary;
+        }
+    }
+}

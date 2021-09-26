@@ -1,0 +1,60 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* using rem unit */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 16px;
+    line-height: 1;
+}
+
+input,
+button,
+textarea,
+select {
+    outline: none;
+    font-family: $font-secondary;
+    font-size: 16px;
+    line-height: 1;
+}
+
+input {
+    line-height: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $cyan-primary;
+    border-radius: 8px;
+    opacity: 0.6;
+}
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+    position: relative;
+}

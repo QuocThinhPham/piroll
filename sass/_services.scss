@@ -1,0 +1,29 @@
+.services {
+    background-color: $white-secondary;
+
+    &>.container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 30px;
+    }
+
+    &-item {
+        text-align: center;
+    }
+
+    &-title {
+        font-size: $font-size-12;
+        font-weight: $font-weight-semi;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    &-desc {
+        font-family: $font-secondary;
+        font-size: $font-size-16;
+        font-weight: $font-weight-thin;
+        line-height: 24px;
+        max-width: 87%;
+        margin: 15px auto 0;
+    }
+}

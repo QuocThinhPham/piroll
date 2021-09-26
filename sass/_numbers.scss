@@ -1,0 +1,35 @@
+.numbers {
+    background-color: $cyan-primary;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    padding-left: 150px;
+
+    &-item {
+        display: flex;
+        place-items: center;
+        color: $white-primary;
+    }
+
+    &-icon {
+        margin-right: 27px;
+    }
+
+    &-count,
+    &-title {
+        display: block;
+    }
+
+    &-count {
+        font-size: $font-size-18;
+        font-weight: $font-weight-semi;
+        margin-bottom: 16px;
+        letter-spacing: 2px;
+    }
+
+    &-title {
+        font-size: $font-size-12;
+        font-weight: $font-weight-thin;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

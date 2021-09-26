@@ -1,0 +1,90 @@
+.header {
+    background: url(../images/bg-hero.jpg) center / 100% no-repeat;
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 0;
+    }
+}
+
+.navbar {
+    &-item {
+        display: inline-block;
+        padding: 0 15px;
+        color: $black-secondary;
+        transition: all 0.2s ease-in-out;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &-link {
+        font-size: $font-size-12;
+        font-weight: $font-weight-semi;
+        text-transform: uppercase;
+        line-height: 24px;
+        color: inherit;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transform-origin: left;
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: $cyan-primary;
+            transition: width 0.2s ease-in-out;
+        }
+    }
+
+    &-item.active {
+        color: $cyan-primary;
+    }
+
+    &-item.active &-link::after {
+        width: 100%;
+    }
+
+    &-item:hover {
+        color: $cyan-primary;
+    }
+
+    &-item:hover &-link::after {
+        width: 100%;
+    }
+}
+
+.hero {
+    min-height: calc(100vh - 95px);
+
+    &-box {
+        position: absolute;
+        top: 230px;
+        left: 670px;
+    }
+
+    &-title {
+        font-size: $font-size-38;
+        font-weight: $font-weight-bold;
+        text-transform: capitalize;
+        line-height: 48px;
+    }
+
+    &-desc {
+        font-family: $font-secondary;
+        font-size: $font-size-18;
+        line-height: 28px;
+        max-width: 480px;
+        color: $black-lighter;
+    }
+}

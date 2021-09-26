@@ -1,0 +1,34 @@
+.contact {
+    background-color: $white-secondary;
+}
+
+.form {
+    max-width: 670px;
+    margin: 0 auto;
+
+    [class^="form-row-"]:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &-row-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 30px;
+    }
+
+    &-control {
+        width: 100%;
+        height: 48px;
+        padding: 0 20px;
+        border: 0;
+
+        font-size: $font-size-15;
+        color: $black-lighter;
+    }
+
+    textarea {
+        padding: 18px 20px;
+        height: 170px;
+        resize: none;
+    }
+}

@@ -1,0 +1,47 @@
+.testimonials {
+    background-color: $cyan-primary;
+    padding-bottom: 150px;
+    position: relative;
+
+    &-block {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    &-author {
+        font-size: $font-size-12;
+        font-weight: $font-weight-semi;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $white-primary;
+    }
+
+    &-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        z-index: 10;
+
+        &-item {
+            margin: 0 5px;
+            width: 6px;
+            height: 6px;
+            border-radius: 100rem;
+            background-color: $dots-color;
+            cursor: pointer;
+            transition: background-color 0.25s linear;
+
+            &.active {
+                width: 10px;
+                height: 10px;
+                background-color: $white-primary;
+            }
+        }
+    }
+}

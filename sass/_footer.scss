@@ -1,0 +1,52 @@
+.footer {
+    background-color: $black-primary;
+    color: $white-primary;
+
+    &>.container {
+        display: grid;
+        grid-template-columns: 470px 300px 300px 100px;
+    }
+
+    & p,
+    & a {
+        display: block;
+        color: inherit;
+        font-family: $font-secondary;
+        font-size: $font-size-15;
+        text-transform: capitalize;
+    }
+
+    & a:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.copyright {
+    h3 {
+        font-size: $font-size-18;
+        font-weight: $font-weight-medium;
+        text-transform: capitalize;
+    }
+
+    p {
+        line-height: 24px;
+        text-transform: unset;
+    }
+}
+
+.info {
+    & a {
+        text-transform: unset;
+    }
+}
+
+.bottom-links {
+    &-left {
+        float: left;
+        width: 112px;
+    }
+
+    & a {
+        display: block;
+    }
+}
